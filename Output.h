@@ -3,12 +3,12 @@
 
 #include <cstdio>
 
-// функции для вывода точек для разных видов аппроксимации
+// С„СѓРЅРєС†РёРё РґР»СЏ РІС‹РІРѕРґР° С‚РѕС‡РµРє РґР»СЏ СЂР°Р·РЅС‹С… РІРёРґРѕРІ Р°РїРїСЂРѕРєСЃРёРјР°С†РёРё
 void Write_SquareAP_Output_Dots(FILE* fl, float a, float b, float c); //
 void Write_KubAP_Output_Dots(FILE* fl, float a, float b, float c, float d); // 
 void Write_LineAP_Output_Dots(FILE* fl, float k, float b); // 
-float* writeOutArr(float a, float b); // функция которая возвращает указатель на массив из 2 коэффициентов
-float* writeOutArr(float a, float b, float c); // функция которая возвращает указатель на массив из 3 коэффициентов
-float* writeOutArr(float a, float b, float c, float d); // функция которая возвращает указатель на массив из 4 коэффициентов
+float* writeOutArr(float a, float b); // С„СѓРЅРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ РІРѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РёР· 2 РєРѕСЌС„С„РёС†РёРµРЅС‚РѕРІ
+float* writeOutArr(float a, float b, float c); // С„СѓРЅРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ РІРѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РёР· 3 РєРѕСЌС„С„РёС†РёРµРЅС‚РѕРІ
+float* writeOutArr(float a, float b, float c, float d); // С„СѓРЅРєС†РёСЏ РєРѕС‚РѕСЂР°СЏ РІРѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ РёР· 4 РєРѕСЌС„С„РёС†РёРµРЅС‚РѕРІ
 
 #endif // !Output
