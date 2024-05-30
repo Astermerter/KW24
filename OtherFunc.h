@@ -2,16 +2,16 @@
 #define OtherFunc
 #define lmax 100
 
-void clear_arr_int(int* arr, int lenarr);  // делаем весь массив int нулями [0,0,0,0, ... ,0]
-bool ifNum_notBe_inArr(float* arr, int lenarr, float Num); // True если числа Num нет в массиве arr, false в ином случае
-int findIndex_inArr(float* arr, int lenarr, float num); // возвращает индекс числа num в массиве arr
-float getMAX(float a, float b); // максимальное между 2 числами 
-float getMIN(float a, float b); // минимальное среди 2 чисел
-bool ifSomethingStrange_inArr(float* Arr, int lenarr); // недоработанная часть функционала которая должна сглаживать итоговый результат аппроксимации
-float AddIndx_InArrStrangeIndx_if_SomethingStrange_inArr(float* Arr, int lenarr, int* ArrStrangeIndx, int* lenarr2); // недоработанная часть функционала которая должна сглаживать итоговый результат аппроксимации
-float findAverage(float* Arr, int* C_Arr, int lenarr); // находит среднее по массиву значений и массиву количества и значений (arr1 =[1,2,3], C_arr2 =[1,0,2] - значит в массиве arr1 одна единица и две тройки)
-int normalization_Arr(float* x, float* y, int n); // функция, которая стирает слишком близко стоящие точки, чтобы аппроксимация была точнее
-void strongNormalization(float* x, float* y, int* n, int FLAP); // сильная нормализация
+void clear_arr_int(int* arr, int lenarr);  // РґРµР»Р°РµРј РІРµСЃСЊ РјР°СЃСЃРёРІ int РЅСѓР»СЏРјРё [0,0,0,0, ... ,0]
+bool ifNum_notBe_inArr(float* arr, int lenarr, float Num); // True РµСЃР»Рё С‡РёСЃР»Р° Num РЅРµС‚ РІ РјР°СЃСЃРёРІРµ arr, false РІ РёРЅРѕРј СЃР»СѓС‡Р°Рµ
+int findIndex_inArr(float* arr, int lenarr, float num); // РІРѕР·РІСЂР°С‰Р°РµС‚ РёРЅРґРµРєСЃ С‡РёСЃР»Р° num РІ РјР°СЃСЃРёРІРµ arr
+float getMAX(float a, float b); // РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РјРµР¶РґСѓ 2 С‡РёСЃР»Р°РјРё 
+float getMIN(float a, float b); // РјРёРЅРёРјР°Р»СЊРЅРѕРµ СЃСЂРµРґРё 2 С‡РёСЃРµР»
+bool ifSomethingStrange_inArr(float* Arr, int lenarr); // РЅРµРґРѕСЂР°Р±РѕС‚Р°РЅРЅР°СЏ С‡Р°СЃС‚СЊ С„СѓРЅРєС†РёРѕРЅР°Р»Р° РєРѕС‚РѕСЂР°СЏ РґРѕР»Р¶РЅР° СЃРіР»Р°Р¶РёРІР°С‚СЊ РёС‚РѕРіРѕРІС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ Р°РїРїСЂРѕРєСЃРёРјР°С†РёРё
+float AddIndx_InArrStrangeIndx_if_SomethingStrange_inArr(float* Arr, int lenarr, int* ArrStrangeIndx, int* lenarr2); // РЅРµРґРѕСЂР°Р±РѕС‚Р°РЅРЅР°СЏ С‡Р°СЃС‚СЊ С„СѓРЅРєС†РёРѕРЅР°Р»Р° РєРѕС‚РѕСЂР°СЏ РґРѕР»Р¶РЅР° СЃРіР»Р°Р¶РёРІР°С‚СЊ РёС‚РѕРіРѕРІС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ Р°РїРїСЂРѕРєСЃРёРјР°С†РёРё
+float findAverage(float* Arr, int* C_Arr, int lenarr); // РЅР°С…РѕРґРёС‚ СЃСЂРµРґРЅРµРµ РїРѕ РјР°СЃСЃРёРІСѓ Р·РЅР°С‡РµРЅРёР№ Рё РјР°СЃСЃРёРІСѓ РєРѕР»РёС‡РµСЃС‚РІР° Рё Р·РЅР°С‡РµРЅРёР№ (arr1 =[1,2,3], C_arr2 =[1,0,2] - Р·РЅР°С‡РёС‚ РІ РјР°СЃСЃРёРІРµ arr1 РѕРґРЅР° РµРґРёРЅРёС†Р° Рё РґРІРµ С‚СЂРѕР№РєРё)
+int normalization_Arr(float* x, float* y, int n); // С„СѓРЅРєС†РёСЏ, РєРѕС‚РѕСЂР°СЏ СЃС‚РёСЂР°РµС‚ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ СЃС‚РѕСЏС‰РёРµ С‚РѕС‡РєРё, С‡С‚РѕР±С‹ Р°РїРїСЂРѕРєСЃРёРјР°С†РёСЏ Р±С‹Р»Р° С‚РѕС‡РЅРµРµ
+void strongNormalization(float* x, float* y, int* n, int FLAP); // СЃРёР»СЊРЅР°СЏ РЅРѕСЂРјР°Р»РёР·Р°С†РёСЏ
 
 
 #endif // !OtherFunc
