@@ -1,0 +1,15 @@
+﻿  Kursah24MAIN.cpp
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(40,58): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(40,81): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(40,104): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(53,56): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(53,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(53,104): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(53,128): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Kursah24MAIN.cpp(16,11): warning C4101: mainArr: неиспользованная локальная переменная
+  Output.cpp
+  Создание кода...
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Output.cpp(64): warning C4172: возвращение адреса локальной или временной переменной : arr
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Output.cpp(70): warning C4172: возвращение адреса локальной или временной переменной : arr
+C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\KW24\Output.cpp(76): warning C4172: возвращение адреса локальной или временной переменной : arr
+  KW24.vcxproj -> C:\Users\sosni\OneDrive\Рабочий стол\С++ коды\KW24\x64\Debug\KW24.exe

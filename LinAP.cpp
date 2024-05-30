@@ -63,5 +63,5 @@ float Return_N_AV(int N, float* ArrX, float* ArrY, char C)
         return findAverage(Barr, C_Barr, C_B);
     if (C == 'K')
         return findAverage(Karr, C_Karr, C_K);
-    return 9999; // хуйня какая-то
+    return 9999; 
 }

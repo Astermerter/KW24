@@ -1,40 +1,53 @@
 #include "OtherFunc.h"
 #include "SquareAP.h"
 
-float find_P(float x, float y)
+void AddInfInAllArr(float* x, float* y, int n, float *A_arr, float *B_arr, float *C_arr)
 {
-	if (x == 0 || y == 0)
-		return 0;
-	return (y) / (x * x);
-}
 
-void AddInf_In_ParrC_Parr(float* x, float* y, int n, float *Parr, int* C_Parr, int * C_P)
-{
-	float P_buf;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n - 2; i++)
 	{
-		P_buf = find_P(*(x + i), *(y + i));
-		if (ifNum_notBe_inArr(Parr, (*C_P)+1, P_buf))
-		{
-			*(Parr + *(C_P)) = P_buf;
-			*(C_Parr + *(C_P)) += 1;
-			(*C_P)++;
-		}
-		else
-		{
-			*(C_Parr + findIndex_inArr(Parr, *C_P, P_buf)) += 1;
-		}
+		*(A_arr + i) = find_Av_a(*x, *y, *(x + 1), *(y + 1), *(x + 2), *(y + 2));
+		*(B_arr + i) = find_Av_b(*x, *y, *(x + 1), *(y + 1), *(x + 2), *(y + 2));
+		*(C_arr + i) = find_Av_c(*x, *y, *(x + 1), *(y + 1), *(x + 2), *(y + 2));
 	}
 }
 
-float ReturnP_Av(float* x, float* y, int n)
+int find_Av_a(float x1, float y1, float x2, float y2, float x3, float y3)
 {
-	float Parr[lmax];
-	int C_Parr[lmax], C_P = 0;
+	float A;
 
-	clear_arr_int(C_Parr, lmax);
+	A = y1 / ((x1 - x2) * (x1 - x3)) + y2 / ((x2 - x1) * (x2 - x3)) + y3 / ((x3 - x1) * (x3 - x2));
 
-	AddInf_In_ParrC_Parr(x, y, n, Parr, C_Parr, &C_P);
+	return A;
+}
 
-	return findAverage(Parr, C_Parr, C_P);
+int find_Av_b(float x1, float y1, float x2, float y2, float x3, float y3)
+{
+	float B;
+
+	B = y1 * (-x2 - x3) / ((x1 - x2) * (x1 - x3)) + y2 * (-x1 - x3) / ((x2 - x1) * (x2 - x3)) + y3 * (-x1 - x2) / ((x3 - x1) * (x3 - x2));
+
+	return B;
+}
+
+int find_Av_c(float x1, float y1, float x2, float y2, float x3, float y3)
+{
+	float C;
+
+	C = y1 * x3 * x2 / ((x1 - x2) * (x1 - x3)) + y2 * x1 * x3 / ((x2 - x1) * (x2 - x3)) + y3 * x1 * x2 / ((x3 - x1) * (x3 - x2));
+
+	return C;
+}
+
+float return_Av_N(float* N, float n)
+{
+	float AV_N=0;
+
+	for (int i = 0; i < n-1; i++)
+	{
+		AV_N += *(N + i);
+	}
+	AV_N / (n - 2);
+
+	return AV_N;
 }

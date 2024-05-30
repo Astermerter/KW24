@@ -1,8 +1,10 @@
 #ifndef SquareAP
 #define SquareAP
 
-float find_P(float x, float y); // найти коэффициент p их формулы y=px^2
-void AddInf_In_ParrC_Parr(float* x, float* y, int n, float* Parr, int* C_Parr, int* C_P); // заполняет 2 массивов, один с коэффициентами p, другой их количество если они повторяются
-float ReturnP_Av(float* x, float* y, int n); // простое нахождение среднего по массивам из вышестоящей функции
+void AddInfInAllArr(float* x, float* y, int n, float* A_arr, float* B_arr, float* C_arr); // Функция, которая записывает все коэффициенты в массивы
+int find_Av_a(float x1, float y1, float x2, float y2, float x3, float y3); // функция, которая находит коэффициент a
+int find_Av_b(float x1, float y1, float x2, float y2, float x3, float y3); // функция, которая находит коэффициент b
+int find_Av_c(float x1, float y1, float x2, float y2, float x3, float y3); // функция, которая находит коэффициент c
+float return_Av_N(float* N, float n); // Функция, которая находит среднее по массиву
 
 #endif // !SquareAP

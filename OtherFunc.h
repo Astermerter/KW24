@@ -9,7 +9,9 @@ float getMAX(float a, float b); // максимальное между 2 числами
 float getMIN(float a, float b); // минимальное среди 2 чисел
 bool ifSomethingStrange_inArr(float* Arr, int lenarr); // недоработанная часть функционала которая должна сглаживать итоговый результат аппроксимации
 float AddIndx_InArrStrangeIndx_if_SomethingStrange_inArr(float* Arr, int lenarr, int* ArrStrangeIndx, int* lenarr2); // недоработанная часть функционала которая должна сглаживать итоговый результат аппроксимации
-float findAverage(float* Arr, int* C_Arr, int lenarr); // находит среднее среди 2 массивов одинаковый длинны
+float findAverage(float* Arr, int* C_Arr, int lenarr); // находит среднее по массиву значений и массиву количества и значений (arr1 =[1,2,3], C_arr2 =[1,0,2] - значит в массиве arr1 одна единица и две тройки)
+int normalization_Arr(float* x, float* y, int n); // функция, которая стирает слишком близко стоящие точки, чтобы аппроксимация была точнее
+void strongNormalization(float* x, float* y, int* n, int FLAP); // сильная нормализация
 
 
 #endif // !OtherFunc
